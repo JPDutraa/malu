@@ -1,4 +1,4 @@
-import { CheckCircle, RefreshCcw, Target, Leaf } from "lucide-react"; // Exemplo com icons modernos (recomendado)
+import { CheckCircle, RefreshCcw, Target, Leaf } from "lucide-react";
 
 const Diferenciais = () => {
   const pilares = [
@@ -15,10 +15,13 @@ const Diferenciais = () => {
           Nossa Filosofia
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {pilares.map((item, index) => (
-            <div key={index} className="bg-primary/80 backdrop-blur-md p-10 rounded-3xl shadow-lg space-y-6 transition hover:shadow-2xl">
-              <div className="flex  justify-center">{item.icone}</div>
+            <div
+              key={index}
+              className="bg-primary/80 backdrop-blur-md p-8 rounded-3xl shadow-lg space-y-6 transition hover:shadow-2xl flex flex-col justify-between"
+            >
+              <div className="flex justify-center">{item.icone}</div>
               <h3 className="text-xl font-semibold text-textPrimary">{item.titulo}</h3>
               <p className="text-sm text-textSecondary leading-relaxed">{item.texto}</p>
             </div>

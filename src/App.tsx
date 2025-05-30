@@ -1,6 +1,5 @@
 import ProdutosProgramas from './components/ProdutosProgramas'
 import HighTicket from './components/HighTicket'
-import Depoimentos from './components/Depoimentos'
 import Diferenciais from './components/Diferenciais'
 import SobreNos from './components/SobreNos'
 import FAQ from './components/FAQ'
