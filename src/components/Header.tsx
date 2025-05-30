@@ -15,7 +15,7 @@ const Header = () => {
         <a href="#inicio" className="hover:text-accent1">Início</a>
         <a href="#produtos" className="hover:text-accent1">Produtos & Programas</a>
         <a href="#sobre" className="hover:text-accent1">Sobre</a>
-        <a href="#faq" className="hover:text-accent1">Contato</a>
+        <a href="#faq" className="hover:text-accent1">FAQ</a>
         </nav>
 
 
@@ -37,7 +37,7 @@ const Header = () => {
             <a href="#inicio" className="block hover:text-accent1" onClick={() => setMenuAberto(false)}>Início</a>
             <a href="#produtos" className="block hover:text-accent1" onClick={() => setMenuAberto(false)}>Produtos & Programas</a>
             <a href="#sobre" className="block hover:text-accent1" onClick={() => setMenuAberto(false)}>Sobre</a>
-            <a href="#faq" className="block hover:text-accent1" onClick={() => setMenuAberto(false)}>Contato</a>
+            <a href="#faq" className="block hover:text-accent1" onClick={() => setMenuAberto(false)}>FAQ</a>
             <button className="mt-4 w-full bg-accent1 text-white px-4 py-2 rounded-lg hover:bg-accent2">
                 Agende sua jornada
             </button>
