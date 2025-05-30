@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         primary: '#A7B67A',
         secondary: '#A9B388',
-        background: '#FEFAE0',
+        background: '#fffafa',
         accent1: '#C4661F',
         accent2: '#D2AB80',
         textPrimary: '#3B8792',
@@ -14,8 +14,8 @@ module.exports = {
         neutral: '#E5E0D8',
       },
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        body: ['"Lato"', '"Open Sans"', 'sans-serif'],
+        display: ['"Playfair Display"','Montserrat', 'serif'],
+        body: ['"Lato"', '"Open Sans"','Montserrat', 'sans-serif'],
       },
     },
   },
