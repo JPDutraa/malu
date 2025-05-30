@@ -1,32 +1,32 @@
-interface Profissional {
-  nome: string
-  descricao: string
-  foto: string
-}
-
-const profissionais: Profissional[] = [
-  {
-    nome: 'Louise Monteiro',
-    descricao: 'Fundadora da MALU, especialista em terapias integrativas, desenvolvimento pessoal e facilitadora de processos de transformação com mais de 5 anos de experiência.',
-    foto: '/lu.jpg', // Aqui você poderá futuramente colocar a foto real
-  },{
-    nome: 'Mariana Freitas',
-    descricao: 'Fundadora da MALU, especialista em terapias integrativas, desenvolvimento pessoal e facilitadora de processos de transformação com mais de 5 anos de experiência.',
-    foto: '/ma.jpg', // Aqui você poderá futuramente colocar a foto real
-  },
-]
-
 const SobreNos = () => {
+  const equipe = [
+    {
+      nome: "Louise Monteiro",
+      cargo: "Fundadora da MALU, especialista em terapias integrativas, desenvolvimento pessoal e facilitadora de processos de transformação com mais de 5 anos de experiência.",
+      imagem: "/lu.jpg",
+    },
+    {
+      nome: "Mariana Freitas",
+      cargo: "Fundadora da MALU, especialista em terapias integrativas, desenvolvimento pessoal e facilitadora de processos de transformação com mais de 5 anos de experiência.",
+      imagem: "/ma.jpg",
+    },
+  ];
+
   return (
-    <section className="bg-background py-20 px-4">
-      <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-display text-primary mb-12">Sobre Nós</h2>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-12">
-          {profissionais.map((profissional, index) => (
-            <div key={index} className="bg-secondary p-6 rounded-xl shadow-md flex flex-col items-center w-80">
-              <img src={profissional.foto} alt={profissional.nome} className="rounded-full w-40 h-40 object-cover mb-4" />
-              <h3 className="text-2xl font-display text-textPrimary mb-2">{profissional.nome}</h3>
-              <p className="text-textSecondary text-sm">{profissional.descricao}</p>
+    <section className="bg-background py-24 px-4">
+      <div className="max-w-7xl mx-auto text-center space-y-10">
+        <h2 className="text-4xl font-display font-semibold text-primary">
+          Sobre Nós
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {equipe.map((pessoa, index) => (
+            <div key={index} className="bg-primary/80 backdrop-blur-md rounded-3xl shadow-lg p-10 space-y-6 transition hover:shadow-2xl">
+              <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg">
+                <img src={pessoa.imagem} alt={pessoa.nome} className="w-full h-full object-cover" />
+              </div>
+              <h3 className="text-xl font-semibold text-textPrimary">{pessoa.nome}</h3>
+              <p className="text-sm text-textSecondary leading-relaxed">{pessoa.cargo}</p>
             </div>
           ))}
         </div>
@@ -35,4 +35,4 @@ const SobreNos = () => {
   )
 }
 
-export default SobreNos
+export default SobreNos;

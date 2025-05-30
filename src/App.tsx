@@ -8,6 +8,8 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
 
+
+
 const App = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
@@ -22,10 +24,6 @@ const App = () => {
 
 <section id="high-ticket">
   <HighTicket />
-</section>
-
-<section id="depoimentos">
-  <Depoimentos />
 </section>
 
 <section id="filosofia">

@@ -1,18 +1,24 @@
-html {
-  scroll-behavior: smooth;
+html, body, #root {
+  height: 100%;
+  overscroll-behavior: smooth;
 }
 
+body {
+  @apply bg-background text-textPrimary font-body;
+  background-image: url('/textures/texture.png');
+  background-size: 300px auto;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-background text-textPrimary font-body;
-}
 * {
   transition: all 0.3s ease;
 }
+
 @keyframes fade-in {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
